@@ -4,6 +4,7 @@ import json
 
 def main():
     '''
+    Prints current "location"(values of wanted keys) in json file
     '''
     twt_main = twitter1.twitter1_main()
     fl = open("twitter1_data.json", encoding = 'utf-8')
@@ -42,6 +43,7 @@ def main():
 
 def location(current_loc):
     '''
+    Finds value of certain dict key if this key exists
     '''
     loc = input("Enter where you want to go now: ")
     if loc == 'back' or loc == "Back" or loc == "BACK":
